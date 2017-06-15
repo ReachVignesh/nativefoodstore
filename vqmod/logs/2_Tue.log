@@ -1,0 +1,45 @@
+---------- Date: 2017-02-21 06:57:24 ~ IP : 117.194.48.145 ----------
+REQUEST URI : /
+MOD DETAILS:
+   modFile   : /home/floretm2/public_html/nativefoodstore.com/vqmod/xml/indian_rupee_symbol_conversion.xml
+   id        : Indian Rupee Symbol
+   version   : 1.0
+   vqmver    : 2.3.2
+   author    : IRS
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): </head>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2017-02-21 06:58:01 ~ IP : 66.249.79.191 ----------
+REQUEST URI : /horsegram-soup?tag=&page=3
+MOD DETAILS:
+   modFile   : /home/floretm2/public_html/nativefoodstore.com/vqmod/xml/indian_rupee_symbol_conversion.xml
+   id        : Indian Rupee Symbol
+   version   : 1.0
+   vqmver    : 2.3.2
+   author    : IRS
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): </head>
+
+----------------------------------------------------------------------
+
+
+---------- Date: 2017-02-21 09:40:39 ~ IP : 101.60.52.55 ----------
+REQUEST URI : /millet
+MOD DETAILS:
+   modFile   : /home/floretm2/public_html/nativefoodstore.com/vqmod/xml/indian_rupee_symbol_conversion.xml
+   id        : Indian Rupee Symbol
+   version   : 1.0
+   vqmver    : 2.3.2
+   author    : IRS
+
+File Name    : catalog/view/theme/*/template/common/header.tpl(0)
+VQModObject::applyMod - SEARCH NOT FOUND (ABORTING MOD): </head>
+
+----------------------------------------------------------------------
+
+

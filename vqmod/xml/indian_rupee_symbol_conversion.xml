@@ -1,0 +1,48 @@
+<modification>
+
+	<id>Indian Rupee Symbol</id>
+	<version>1.0</version>
+	<vqmver>2.3.2</vqmver>
+	<author>IRS</author>
+
+	<file name="system/library/currency.php">
+		<operation>
+			<search position="replace" offset="2"><![CDATA[if (($symbol_left) && ($format)) {]]></search>
+			<add><![CDATA[if (($symbol_left) && ($format)) {
+        if($currency=='INR')
+        $string .='<span class=\'WebRupee\'>Rs</span>';
+        else
+        $string .= $symbol_left;
+        }]]></add>
+		</operation>
+		<operation>
+			<search position="replace" offset="2"><![CDATA[if (($symbol_right) && ($format)) {]]></search>
+			<add><![CDATA[if (($symbol_right) && ($format)) {
+        if($currency=='INR')
+        $string .='';
+        else
+        $string .= $symbol_right;
+        }]]></add>
+		</operation>
+	</file>
+
+	<file name="catalog/view/theme/*/template/module/currency.tpl">
+		<operation>
+			<search position="after" offset="0"><![CDATA[<?php foreach ($currencies as $currency) { ?>]]></search>
+			<add><![CDATA[<?php if($currency['code']=="INR"){$currency['symbol_left']="<span class='WebRupee'>Rs</span>";}?>]]></add>
+		</operation>
+	</file>
+	
+	<file name="catalog/view/theme/*/template/common/header.tpl">
+		<operation>
+			<search position="before"><![CDATA[</head>]]></search>
+			<add><![CDATA[<link rel="stylesheet" type="text/css" href="irsgroup/ind-font/font.css" />
+<script type="text/javascript" src="irsgroup/ind-font/inr.js"></script>]]></add>
+		</operation>
+	</file>
+	
+</modification>
+
+
+
+
